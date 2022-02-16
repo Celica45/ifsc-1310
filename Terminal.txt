@@ -1,0 +1,6 @@
+Open terminal
+run "git status"
+run "git add *"
+run "git status"
+run "git commit -m 'update text'"
+run "git push"
