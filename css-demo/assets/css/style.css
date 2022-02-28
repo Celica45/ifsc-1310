@@ -1,8 +1,89 @@
 /* 
 Stylesheet For CSS Demo
 */
+/* ---------------Box Sizing----------------- */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+
+/* ---------------Global Style----------------- */
+
+
+/* Color Scheme
+Primary Blue #65818C
+Green #99BFAA
+Dark Grey #585859
+White #D9D7D7
+Black #0D0D0D
+*/
+
 
 
 body {
-    background-color: blanchedalmond;
+    background-color: #65818C;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+header.primary {
+    background-color: #99BFAA;
+    text-align: center;
+    color:#0D0D0D;
+
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+
+    /* T,R,B,L */
+    padding: 40px 40px 40px 40px;
+
+    /* T/B, R/L */
+    padding: 40px 40px;
+
+    /* All sides */
+    padding: 40px;
+
+
+    text-shadow: 2px 2px 1px #D9D7D7;
+}
+
+/* vw relative to width, vh relative to hight % */
+/* use rem for size */
+header.primary h1 {
+    font-size: 2.6rem;
+    margin: 20px 0;
+}
+
+header.primary h1 a{
+    color:#65818C;
+    text-decoration: none;
+}
+
+header.primary h2{
+    font-size: 1.4rem;
+    margin: 20px auto 40px;
+}
+
+header.primary nav{}
+header.primary nav ul{
+    /* removes extra space from list items attachments*/
+    padding: 0;
+}
+header.primary nav ul li{
+    list-style-type: none;
+}
+header.primary nav ul li a{
+    color: #65818C;
+    text-decoration: none;
+    background-color: #0D0D0D;
+    padding: 8px 16px;
+    display: inline-block;
 }
