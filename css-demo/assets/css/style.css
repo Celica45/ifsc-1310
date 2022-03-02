@@ -13,6 +13,14 @@ html {
   }
 
 
+/* ----------------Utility Classes--------------*/
+.container{
+    width:70vw;
+    margin: 40px auto;
+}
+
+
+
 /* ---------------Global Style----------------- */
 
 
@@ -52,7 +60,7 @@ header.primary {
     padding: 40px;
 
 
-    text-shadow: 2px 2px 1px #D9D7D7;
+    /*text-shadow: 2px 2px 1px #D9D7D7;*/
 }
 
 /* vw relative to width, vh relative to hight % */
@@ -72,18 +80,69 @@ header.primary h2{
     margin: 20px auto 40px;
 }
 
-header.primary nav{}
+header.primary nav{
+    width: 80vw;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
 header.primary nav ul{
     /* removes extra space from list items attachments*/
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 header.primary nav ul li{
     list-style-type: none;
 }
 header.primary nav ul li a{
-    color: #65818C;
+    color: #D9D7D7;
     text-decoration: none;
     background-color: #0D0D0D;
+    /* Use rgba last number or opasity */
+    background-color: rgba(0,0,0,.4);
     padding: 8px 16px;
     display: inline-block;
+    border-radius: 20px 10px 5px 10px;
+
+}
+
+header.primary nav a:hover{
+    background-color: rgba(0,0,0,.8);
+    transition: .3s;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #99BFAA;
+}
+
+section#intro{
+    border-bottom: 1.5px dashed #0D0D0D;
+    padding-bottom: 1.1rem;
+
+}
+
+section#intro h2{
+    color:#99BFAA;
+    border-bottom: 1px dotted #0D0D0D;
+}
+
+
+/* change order of website for screen size */
+@media screen and (max-width:600px){
+
+header.primary nav ul {
+    flex-direction: column;
+}
+
+header.primary nav a{
+    display: block;
+}
+
+
+
+
+
+
 }
