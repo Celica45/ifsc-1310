@@ -19,6 +19,9 @@ html {
     margin: 40px auto;
 }
 
+img{
+    max-width: 100%;
+}
 
 
 /* ---------------Global Style----------------- */
@@ -117,6 +120,7 @@ h1,h2,h3,h4,h5,h6{
     color: #99BFAA;
 }
 
+/* MAIN CONTENT */
 section#intro{
     border-bottom: 1.5px dashed #0D0D0D;
     padding-bottom: 1.1rem;
@@ -128,6 +132,80 @@ section#intro h2{
     border-bottom: 1px dotted #0D0D0D;
 }
 
+
+#content{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#content article.post{
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(57, 33, 93, 0.553);
+    padding: 10px;
+    border-radius: 4px;
+    font-size: .7rem;
+}
+#content article.post:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,.4);
+}
+
+
+
+time.post-date, figcaption, .post-meta{
+    text-transform: uppercase;
+    color: rgb(40, 40, 40);
+}
+
+
+.post figure{
+    background: red;
+    margin: 0;
+}
+.post img{
+    border: 1px solid rgb(95, 95, 95);
+    padding: 2px;
+    margin: 5px 0;
+}
+
+
+.post h2 a{
+    color: #9ecbdc;
+}
+.post a:hover, .post a:active{
+    text-decoration: none;
+}
+
+
+/* Attribute Selector */
+aside[role="complementary"]{
+    background: #3f5158;
+    color: #D9D7D7;
+}
+
+
+aside div.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+aside article.widget{
+    width: 45%;
+}
+article.widget a{
+    color: white;
+    display: block;
+    margin-top: .8rem;
+    text-align: right;
+}
+article.widget footer{
+    display: none;
+}
+
+
+#colophon{
+    background-color: #3f5158;
+}
 
 /* change order of website for screen size */
 @media screen and (max-width:600px){
