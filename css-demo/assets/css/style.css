@@ -253,7 +253,7 @@ table{
     border-collapse: collapse;
 }
 tr{
-
+    color: #c0c0c0;
 }
 tr:nth-child(even){
     background-color: #99BFAA;
@@ -265,7 +265,7 @@ tr:hover{
     background-color: #c5c5c5;
 }
 td:nth-child(2n), :nth-child(3n){
-    text-align: right;
+    text-align: left;
 }
 th{
     background-color: #3f5158;
@@ -280,7 +280,7 @@ td{
 
 
 
-dl{}
+dl{color: #c0c0c0;}
 dt{
     font-weight: bold;
 }
