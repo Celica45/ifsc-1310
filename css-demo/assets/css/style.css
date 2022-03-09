@@ -10,6 +10,7 @@ html {
   *:before,
   *:after {
     box-sizing: inherit;
+    text-align: left;
   }
 
 
@@ -23,6 +24,24 @@ img{
     max-width: 100%;
 }
 
+.img-right{
+    float: right;
+    margin-left: 20px;
+    border: 1px solid #3f5158;
+    padding: 5px;
+}
+.img-left{
+    float: left;
+    margin-right: 20px;
+    border: 1px solid #3f5158;
+    padding: 5px;
+}
+.img-center{
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #3f5158;
+    padding: 5px;
+}
 
 /* ---------------Global Style----------------- */
 
@@ -137,6 +156,8 @@ section#intro h2{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: 1px dotted #c0c0c0;
+    padding-bottom: 2.8rem;
 }
 
 #content article.post{
@@ -206,6 +227,73 @@ article.widget footer{
 #colophon{
     background-color: #3f5158;
 }
+
+
+
+#additional-elements h2{
+    color: #D9D7D7;
+    border-bottom: 1px dotted #9ecbdc;
+}
+#additional-elements a{
+    color:#9ecbdc
+}
+#additional-elements a:hover{
+    text-decoration: none;
+}
+#additional-elements h3{
+    border-left: 8px solid #3f5158;
+    padding: 5px 10px;
+}
+
+
+
+
+table{
+    width: 100%;
+    border: 1px solid #0D0D0D;
+    border-collapse: collapse;
+}
+tr{
+
+}
+tr:nth-child(even){
+    background-color: #99BFAA;
+}
+tr:nth-child(odd){
+    background-color: #779ba8;
+}
+tr:hover{
+    background-color: #c5c5c5;
+}
+td:nth-child(2n), :nth-child(3n){
+    text-align: right;
+}
+th{
+    background-color: #3f5158;
+    color: #D9D7D7;
+    width: 33%;
+    padding: 10px;
+}
+td{
+    border: 1px solid #0D0D0D;
+    padding: 5px;
+}
+
+
+
+dl{}
+dt{
+    font-weight: bold;
+}
+dd{
+    margin-left: 0;
+}
+/* Ajacent Sibling Combinator */
+dd + dt{
+    background: rgb(139, 103, 103);
+}
+
+
 
 /* change order of website for screen size */
 @media screen and (max-width:600px){
