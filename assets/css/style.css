@@ -1,0 +1,76 @@
+/*----------------Box Sizing---------------*/
+
+html{
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+/*--------------Utility Classes--------------*/
+
+/*--------------Global Style-----------------*/
+
+/* Color Scheme
+Primary #73064D Red Pink
+#A6086F Pink
+#3F1A73 Purple
+#230F40 Dark Purple
+#4024A6 Blue Purple
+*/
+
+
+body{
+    font-family: 'Hubballi', cursive;
+}
+/*Title*/
+#Title h1{
+    font-size: 3.5vw;
+    color: #471e73;
+    text-shadow: 2px 2px rgb(28, 28, 28);
+    text-align: center;
+    background-color: #73064D;
+    width: 45vw;
+    border: 15px solid #230F40;
+    padding: 30px;
+    border-radius: 20px 15px 10px 20px;
+    margin: auto;
+    box-shadow: 10px 10px #471e73;
+    max-width: 800px;
+    max-height: fit-content;
+    
+}
+/*Nav*/
+#nav nav{
+    font-size: 2vw;
+    text-align: center;
+    background-color: #3F1A73;
+    width: 35vw;
+    border: 10px solid black;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 20px 20px 15px 15px;
+    padding: 10px;
+}
+#nav nav ul{
+    margin: 0;
+    padding: 0;
+}
+#nav nav ul li{
+    margin: 0;
+    padding: 4px 0 4px 20px;
+    list-style-type: url('../img/liststyle.png') no-repeat top left;
+}
+#nav nav ul li a{
+    color: #4560c0;
+    text-shadow: 4px 4px #480431;
+    text-decoration: none;
+    border: 10px solid #3F1A73;
+    border-radius: 15px 25px 15px 25px;
+}
+#nav nav ul li a:hover{
+    background-color: #73064D95;
+    transition: 0.5s;
+}
