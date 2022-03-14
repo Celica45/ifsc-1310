@@ -61,7 +61,6 @@ body{
 #nav nav ul li{
     margin: 0;
     padding: 4px 0 4px 20px;
-    list-style-type: url('../img/liststyle.png') no-repeat top left;
 }
 #nav nav ul li a{
     color: #4560c0;
