@@ -60,6 +60,14 @@ Green #8A8C3E
 LightBrown #736F68
 */
 
+#history{
+  border-radius: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 
 body {
     font-family: 'Hubballi', cursive;
@@ -76,6 +84,14 @@ header{
   padding-bottom: 40px;
   padding-left: 40px;
 }
+
+#dragon{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 
 header h1{
   font-size: 3rem;
@@ -132,8 +148,9 @@ p{
 
 h3 {
   text-align: left;
-  padding-left: 14%;
   text-decoration: underline;
+  border-radius: 4px;
+  background-color: #8684a3;
 }
 
 
